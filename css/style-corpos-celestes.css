@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Bruno+Ace+SC&display=swap');
+
+:root {
+    --cor-secundaria: #7990d6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(
+        -135deg,
+        #223E8C,
+        #0C172E);
+    color: aliceblue;
+    font-family: 'Anonymous Pro', monospace;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+    
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    background-color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh;
+}
+
+.titulo {
+    font-size: 6em;
+    margin-top: 10vh;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.desc {
+    font-size: 2em;
+}
+
+.titulo, .desc {
+    text-align: center;
+}
+
+
+.corpos {
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    margin: 5rem;
+    padding: 1.5rem;
+    text-align: justify;
+}
+
+.corpos img {
+    border: 2px solid aliceblue;
+    margin-left: 1rem;
+    width: 25%;
+    height: auto;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1vh;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: #4A5A9A;
+    font-weight: bold;
+    transform: translateY(-5px);
+}
+
+footer {
+    display: flex;
+    background-color: var(--cor-secundaria);
+    color: black;
+    width: 100%;
+}
+
+footer p {
+    font-weight: bold;
+    margin: 1vh;
+    margin-left: 3vw;
+}

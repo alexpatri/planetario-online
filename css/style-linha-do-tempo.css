@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Bruno+Ace+SC&display=swap');
+
+:root {
+    --cor-secundaria: #7990d6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {    
+    background-image: linear-gradient(
+        -135deg,
+        #223E8C,
+        #0C172E);
+    color: aliceblue;
+    font-family: 'Anonymous Pro', monospace;
+    min-height: 100vh;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    background-color: var(--cor-secundaria);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh;
+}
+
+.menu a {
+    color: black;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.titulo {
+    font-size: 4em;
+    margin-top: 10vh;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.desc {
+    font-size: 1.5em;
+}
+
+.titulo, .desc {
+    text-align: center;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    margin-top: 10vh;
+    width: 100%;
+    height: 5px;
+}
+
+.ponto {
+    background-color: aliceblue;
+    color: aliceblue;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    width: 2vh;
+    height: 2vh;
+}
+
+.ponto:hover {
+    cursor: pointer;
+}
+
+.ponto p {
+    text-align: center;
+    margin-top: 2.5vh;
+}
+
+.modal {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: .2s;
+    opacity: 0;
+    margin-bottom: 2.5vh;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.conteudo {
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50vw;
+    min-height: 35vh;
+    height: auto;
+    padding: 2rem 2rem 1rem;
+    text-align: justify;
+}
+
+.conteudo p {
+    margin-top: 1vh;
+}
+
+.btn{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.btn a {
+    background-color: #00244F;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: .5rem;
+}
+
+img {
+    position: absolute;
+    bottom: 8vh;
+    right: 3vw;
+    width: 15%;
+}
+
+footer {
+    display: flex;
+    background-color: var(--cor-secundaria);
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-weight: bold;
+    margin: 1vh;
+    margin-left: 3vw;
+}
